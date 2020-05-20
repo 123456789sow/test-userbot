@@ -93,13 +93,13 @@ async def carbon_api(e):
    # Waiting for downloading
    sleep(2.5)
    color_name = driver.find_element_by_xpath('/html/body/div[1]/main/div[2]/div[2]/div[1]/div[1]/div/span[2]/input').get_attribute('value')
-   await e.edit("`Done Dana Done...\n100%`")
+   await e.edit("`Dono Dana Done...\n100%`")
    file = './carbon.png'
    await e.edit("`Uploading..`")
    await e.client.send_file(
          e.chat_id,
          file,
-         caption="<< `Here's your carbon!` \n **Carbonised by** [@anubisxx.](https://github.com/Dark-Princ3/X-tra-Telegram)>>\n**Colour Scheme: **`{}`".format(color_name),
+         caption="<< `Here's your carbon, gei boi!` \n **Carbonised by** @d4rkkn19h6 >>\n**Colour Scheme: **`{}`".format(color_name),
          force_document=True,
          reply_to=e.message.reply_to_msg_id,
          )
